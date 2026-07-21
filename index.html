@@ -1,97 +1,186 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Student Registration Form</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <h2>Student Registration Form</h2>
     <p>Please fill the right details:</p>
     <form>
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+      <label for="name">Name:</label><br />
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Enter your name"
+        required
+      /><br /><br />
 
-        <label for="fatherName">Father's Name:</label><br>
-        <input type="text" id="fatherName" name="fatherName" placeholder="Enter your father's name" required><br><br>
+      <label for="fatherName">Father's Name:</label><br />
+      <input
+        type="text"
+        id="fatherName"
+        name="fatherName"
+        placeholder="Enter your father's name"
+        required
+      /><br /><br />
 
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" placeholder=" Enter your email" required><br><br>
+      <label for="email">Email:</label><br />
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder=" Enter your email"
+        required
+      /><br /><br />
 
-        <label for="password">Password:</label><br>
-        <input type="password" id="password" name="password" placeholder="Enter your password" minlength="8"
-            required><br><br>
+      <label for="password">Password:</label><br />
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Enter your password"
+        minlength="8"
+        required
+      /><br /><br />
 
-        <label for="age">Age</label><br>
-        <input type="number" id="age" name="age" placeholder="Enter your age" min="18" max="120" required><br><br>
+      <label for="age">Age</label><br />
+      <input
+        type="number"
+        id="age"
+        name="age"
+        placeholder="Enter your age"
+        min="18"
+        max="120"
+        required
+      /><br /><br />
 
-        <label for="mobile">Mobile Number:</label><br>
-        <input type="tel"
-       id="mobile"
-       name="mobile"
-       pattern="[0-9]{10}"
-       placeholder="Enter 10-digit mobile number"
-       required><br><br>
+      <label for="mobile">Mobile Number:</label><br />
+      <input
+        type="tel"
+        id="mobile"
+        name="mobile"
+        pattern="[0-9]{10}"
+        placeholder="Enter 10-digit mobile number"
+        required
+      /><br /><br />
+      <label for="website">website:</label><br />
+      <input
+        type="url"
+        id="website"
+        name="website"
+        placeholder="https://example.com"
+        required
+      /><br /><br />
 
-        <label for="dob">Date of Birth:</label><br>
-        <input type="date" id="dob" name="dob" required><br><br>
+      <label for="course">search for course</label><br />
+      <input
+        type="search"
+        id="course"
+        name="course"
+        placeholder="search your course"
+      /><br /><br />
 
-        <label for="time">Time:</label><br>
-        <input type="time" id="time" name="time" required><br><br>
+      <label for="experience">Experience Level:</label><br />
+      <input
+        type="range"
+        id="experience"
+        name="experience"
+        min="0"
+        max="10"
+        value="5"
+        step="1"
+      /><br /><br />
 
-        <label for="color">Favorite Color:</label><br>
-        <input type="color" id="color" name="color" required><br><br>
+      <label for="dob">Date of Birth:</label><br />
+      <input type="date" id="dob" name="dob" required /><br /><br />
 
-        <label for="file">File:</label><br>
-        <input type="file" id="file" name="file" required><br><br>
+      <label for="time">Time:</label><br />
+      <input type="time" id="time" name="time" required /><br /><br />
 
-        <label for="country">Country:</label><br>
-        <select id="country" name="country" required>
-            <option value="">--Select Country--</option>
-            <option value="India">India</option>
-            <option value="USA">USA</option>
-            <option value="UK">UK</option>
-            <option value="Canada">Canada</option>
-            <option value="Australia">Australia</option>
-        </select><br><br>
+      <label for="color">Favorite Color:</label><br />
+      <input type="color" id="color" name="color" required /><br /><br />
 
-        <label for="address">Address:</label><br>
-        <textarea id="address" name="address" rows="7" cols="35" placeholder="Enter your address"
-            required></textarea><br><br>
+      <label for="file">File:</label><br />
+      <input type="file" id="file" name="file" required /><br /><br />
 
-        <fieldset>
+      <label for="month">Birth Month:</label><br />
+      <input type="month" id="month" name="month" /><br /><br />
 
-            <legend>Gender</legend>
-            <input type="radio" id="female" name="gender" value="female" required>
-            <label for="female">Female</label><br><br>
+      <label for="week">Preferred week</label><br />
+      <input type="week" id="week" name="week" required /><br /><br />
 
-            <input type="radio" id="male" name="gender" value="male" required>
-            <label for="male">Male</label><br><br>
-        </fieldset>
+      <label for="hidden">User ID </label><br />
+      <input type="hidden" id="userid" name="userid" value="12345" />
 
-        <fieldset>
-            <legend>
-                <h2>Hobbies</h2>
-            </legend>
+      <label for="country">Country:</label><br />
+      <select id="country" name="country" required>
+        <option value="">--Select Country--</option>
+        <option value="India">India</option>
+        <option value="USA">USA</option>
+        <option value="UK">UK</option>
+        <option value="Canada">Canada</option>
+        <option value="Australia">Australia</option></select
+      ><br /><br />
 
-            <input type="checkbox" id="reading" name="hobbies" value="reading">
-            <label for="reading">Reading</label><br><br>
+      <label for="address">Address:</label><br />
+      <textarea
+        id="address"
+        name="address"
+        rows="7"
+        cols="35"
+        placeholder="Enter your address"
+        required
+      ></textarea
+      ><br /><br />
 
-            <input type="checkbox" id="coding" name="hobbies" value="coding">
-            <label for="coding">Coding</label><br><br>
+      <fieldset>
+        <legend>Gender</legend>
+        <input type="radio" id="female" name="gender" value="female" required />
+        <label for="female">Female</label><br /><br />
 
-            <input type="checkbox" id="playing" name="hobbies" value="playing">
-            <label for="playing">Playing</label><br><br>
+        <input type="radio" id="male" name="gender" value="male" required />
+        <label for="male">Male</label><br /><br />
+      </fieldset>
 
-            <input type="checkbox" id="Gaming" name="hobbies" value="Gaming">
-            <label for="Gaming">Gaming</label><br><br>
-        </fieldset>
+      <fieldset>
+        <legend>
+          <h2>Hobbies</h2>
+        </legend>
 
-        <input type="submit" value="Register">
-        <input type="reset" value="Reset">
+        <input type="checkbox" id="reading" name="hobbies" value="reading" />
+        <label for="reading">Reading</label><br /><br />
+
+        <input type="checkbox" id="coding" name="hobbies" value="coding" />
+        <label for="coding">Coding</label><br /><br />
+
+        <input type="checkbox" id="playing" name="hobbies" value="playing" />
+        <label for="playing">Playing</label><br /><br />
+
+        <input type="checkbox" id="Gaming" name="hobbies" value="Gaming" />
+        <label for="Gaming">Gaming</label><br /><br />
+      </fieldset>
+
+      <label for="Registration Progress">Registration Progress</label><br />
+      <progress value="75" max="100"></progress> <br /><br />
+
+      <label for="battery">Battery level</label><br />
+      <meter id="battery" value="80" max="100"></meter><br /><br />
+      <h3>😊 Entertainment 😊</h3>
+      <video width="500" controls>
+        <source src="intro.webm" type="video/webm" />
+        Your browser does not support video.
+      </video><br /><br ></br>
+
+      <audio controls>
+        <source src="mp3.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio> <br /><br />
+      <input type="submit" value="Register" />
+      <input type="reset" value="Reset" />
     </form>
-</body>
-
+  </body>
 </html>
